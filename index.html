@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mechanical Maintenance - 11th & 12th Bifocal</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #eef2f7;
+}
+header {
+    background: linear-gradient(90deg,#1e3c72,#2a5298);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+nav {
+    background: #222;
+    text-align: center;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+nav a:hover {
+    color: yellow;
+}
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 10px;
+}
+button {
+    padding: 10px;
+    background: #2a5298;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer {
+    text-align: center;
+    background: #1e3c72;
+    color: white;
+    padding: 10px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>Mechanical Maintenance</h1>
+<p>11th & 12th STD Bifocal - Smart Learning Portal</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#topics">Topics</a>
+<a href="#quiz">Quiz</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+<!-- Sir Section -->
+<div class="card" style="text-align:center;">
+<img src="sir.jpg.jpeg" alt="Sir Photo"
+style="width:150px;height:150px;border-radius:50%;box-shadow:0 4px 10px rgba(0,0,0,0.3);margin-bottom:10px;">
+<h2>Welcome Student 👨‍🔧</h2>
+<p><b>Guided by: SHALENDRA SHIVALE</b></p>
+<p>This platform helps you learn Mechanical Maintenance with notes and quizzes.</p>
+</div>
+
+<!-- Topics -->
+<div id="topics" class="card">
+<h2>📘 Topics</h2>
+<div class="grid">
+<div class="card">Workshop Safety</div>
+<div class="card">Measuring Instruments</div>
+<div class="card">Lubrication System</div>
+<div class="card">Preventive Maintenance</div>
+<div class="card">Machine Elements</div>
+</div>
+</div>
+
+<!-- Quiz -->
+<div id="quiz" class="card">
+<h2>🧠 Quick Quiz</h2>
+<p>What is lubrication used for?</p>
+<button onclick="checkAnswer(true)">Reduce friction</button>
+<button onclick="checkAnswer(false)">Increase heat</button>
+<p id="result"></p>
+</div>
+
+<!-- Notes -->
+<div class="card">
+<h2>📄 Notes</h2>
+<button onclick="alert('PDF notes coming soon!')">Download Notes</button>
+</div>
+
+<!-- Contact -->
+<div id="contact" class="card">
+<h2>📞 Contact</h2>
+<p>Name: SHALENDRA SHIVALE</p>
+<p>Contact No: 9822109175</p>
+
+<a href="tel:9822109175">
+<button>📞 Call Now</button>
+</a>
+
+<a href="https://wa.me/919822109175" target="_blank">
+<button>💬 WhatsApp</button>
+</a>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Mechanical Maintenance | Student Project</p>
+</footer>
+
+<script>
+function checkAnswer(correct){
+let result = document.getElementById('result');
+if(correct){
+    result.innerHTML = "✅ Correct Answer!";
+    result.style.color = "green";
+}else{
+    result.innerHTML = "❌ Wrong Answer!";
+    result.style.color = "red";
+}
+}
+</script>
+
+</body>
+</html>
